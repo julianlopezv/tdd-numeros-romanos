@@ -43,3 +43,39 @@ func TestTen(t *testing.T) {
 func TestNine(t *testing.T) {
 	assert.Equal(t, roman.RomanToDecimal("IX"), 9, "The roman IX is the decimal 9")
 }
+
+func TestTwoelve(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XII"), 12, "The roman XII is the decimal 12")
+}
+
+func TestFourteen(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XIV"), 14, "The roman XIV is the decimal 14")
+}
+
+func TestFifteen(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XV"), 15, "The roman XV is the decimal 15")
+}
+
+func TestSixteen(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XVI"), 16, "The roman XVI is the decimal 16")
+}
+
+func TestNineteen(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XIX"), 19, "The roman XIX is the decimal 19")
+}
+
+func TestTwenty(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XX"), 20, "The roman XX is the decimal 20")
+}
+
+func TestTwentySeven(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XXVII"), 27, "The roman XXVII is the decimal 27")
+}
+
+func TestThirtyThree(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XXXIII"), 33, "The roman XXXIII is the decimal 33")
+}
+
+func TestThirtyNine(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("XXXIX"), 39, "The roman XXXIX is the decimal 39")
+}
