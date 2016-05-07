@@ -13,6 +13,12 @@ func RomanToDecimal(roman string) int {
 				count -= 2
 				flag = 0
 			}	
+		} else if roman[i] == 'X' {
+			count += 10
+			if flag == 1 {
+				count -= 2
+				flag = 0
+			}	
 		}
     }
 	return count

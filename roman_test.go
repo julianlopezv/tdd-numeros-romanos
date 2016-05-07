@@ -27,3 +27,19 @@ func TestFour(t *testing.T) {
 func TestFive(t *testing.T) {
 	assert.Equal(t, roman.RomanToDecimal("V"), 5, "The roman V is the decimal 5")
 }
+
+func TestSix(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("VI"), 6, "The roman VI is the decimal 6")
+}
+
+func TestEight(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("VIII"), 8, "The roman VIII is the decimal 8")
+}
+
+func TestTen(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("X"), 10, "The roman X is the decimal 10")
+}
+
+func TestNine(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("IX"), 9, "The roman IX is the decimal 9")
+}
