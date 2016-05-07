@@ -13,7 +13,13 @@ func RomanToDecimal(roman string) int {
 		} else if roman[i] == 'V' {
 			count += 5
 		} else if roman[i] == 'X' {
-			count += 10	
+			if i < romans - 1 && roman[i+1] == 'L'{
+				count -= 10
+			} else {
+				count += 10
+			}	
+		} else if roman[i] == 'L' {
+			count += 50
 		}
     }
 	return count
