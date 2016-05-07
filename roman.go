@@ -4,20 +4,31 @@ func RomanToDecimal(roman string) int {
     count := 0
 	lastval := 0
 	romans := len(roman)
-	for i := 0; i < romans; i++ {
+	for i := romans - 1; i >= 0; i-- {
 		if roman[i] == 'I'{
-			count += 1
-			lastval = 2
+			if lastval > 1{
+				lastval = -1
+			} else {
+				lastval = 1
+			}
 		} else if roman[i] == 'V' {
-			count += 5 - lastval
-			lastval = 0
+			lastval = 5
 		} else if roman[i] == 'X' {
-			count += 10
-			lastval = 20
+			if lastval > 10{
+				lastval = -10
+			} else {
+				lastval = 10
+			}
 		} else if roman[i] == 'L' {
-			count += 50 - lastval
-			lastval = 0
+			lastval = 50
+		} else if roman[i] == 'C' {
+			if lastval > 100{
+				lastval = -100
+			} else {
+				lastval = 100
+			}
 		}
+		count += lastval
     }
 	return count
 }
