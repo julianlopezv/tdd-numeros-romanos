@@ -108,3 +108,15 @@ func TestHundredTwentySix(t *testing.T) {
 func TestThreeHundredNinetySix(t *testing.T) {
 	assert.Equal(t, roman.RomanToDecimal("CCCXCVI"), 396, "The roman CCCXCVI is the decimal 396")
 }
+
+func TestSevenHundredThirtyNine(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("DCCXXXIX"), 739, "The roman DCCXXXIX is the decimal 739")
+}
+
+func TestThousand(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("M"), 1000, "The roman M is the decimal 1000")
+}
+
+func TestNineHundredFourtyEight(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("CMXLVIII"), 948, "The roman CMXLVIII is the decimal 948")
+}
