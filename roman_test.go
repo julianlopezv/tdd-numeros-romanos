@@ -19,3 +19,11 @@ func TestTwo(t *testing.T) {
 func TestThree(t *testing.T) {
 	assert.Equal(t, roman.RomanToDecimal("III"), 3, "The roman III is the decimal 3")
 }
+
+func TestFour(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("IV"), 4, "The roman IV is the decimal 4")
+}
+
+func TestFive(t *testing.T) {
+	assert.Equal(t, roman.RomanToDecimal("V"), 5, "The roman V is the decimal 5")
+}
